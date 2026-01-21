@@ -38,7 +38,7 @@ If you need to process the other three datasets, please download them from the l
 emb_dim = 128              # Dimensions of problem and conceptual representation
 correct_emb_dim = 16       # The representation dimension of the answer
 ht_dim = 32                # The dimension of the out output by LSTM, which is the student feature representation vector
-num_mv_layers = 1          # Number of layers in the first channel
+num_mv_layers = 3          # Number of layers in the first channel
 num_gcn_layers = 3         # Number of layers in the second channel
 num_question_layers = 6    # Number of layers in the third channel
 num_lstm_layers = 3        # lstm layer
@@ -54,4 +54,5 @@ run train.py  #To train on different datasets, please modify the values of 'num_
 run test.py  ##To load the trained model, set model_filename = 'trained_model_algebra2005.pt'.
 
 Note: You can also train on your dataset. Refer to the preprocessing code in 'data/algebra2005/algebra2005_dataprocess.ipynb' for guidance. By following a similar procedure, you can generate the required input files and use them directly for model training.
+
 
